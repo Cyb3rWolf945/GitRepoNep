@@ -1,0 +1,112 @@
+{
+	"id": "fd04dc61-265e-47ee-8398-56008e7a3149",
+	"createdAt": "2025-10-27T17:52:18.000Z",
+	"createdBy": "admin",
+	"fields": [
+		{
+			"id": "371dd879-dfe0-4de3-aff2-04f68fb071f8",
+			"fieldName": "user_id",
+			"fieldType": "uuid",
+			"isUnique": true,
+			"description": "relation with user"
+		},
+		{
+			"id": "09cc0adb-adc1-41a9-a58f-e1ed46c4292a",
+			"fieldName": "artist_id",
+			"fieldType": "uuid",
+			"isUnique": true,
+			"description": "relation with artist"
+		}
+	],
+	"indices": [],
+	"foreignKeys": [
+		{
+			"id": "91b66370-5c72-457b-e08e-9e34ce1fe2c5",
+			"name": "FK_1d3c32e30a4902561c0c2c59578",
+			"referencedTable": "users",
+			"referencedTableId": "7c7a9899-beb6-43bf-bd39-860d70b200cb",
+			"referencedTableColumns": [
+				{
+					"id": "106eb8e1-9086-4eba-eaac-5e2495a6ca62",
+					"fieldName": "EMAIL",
+					"fieldType": "smalltext",
+					"isUnique": true
+				},
+				{
+					"id": "a518c3f4-d01d-49e9-ca78-e34101de1030",
+					"fieldName": "PASSWORD_HASH",
+					"fieldType": "smalltext",
+					"isUnique": false
+				},
+				{
+					"id": "e08b1e2c-5011-4df2-a55b-fafafd259d5a",
+					"fieldName": "DISPLAY_NAME",
+					"fieldType": "smalltext",
+					"isUnique": false
+				}
+			],
+			"columns": [
+				{
+					"referencedColumnId": "id",
+					"id": "371dd879-dfe0-4de3-aff2-04f68fb071f8",
+					"fieldName": "user_id",
+					"fieldType": "uuid",
+					"isUnique": true,
+					"description": "relation with user",
+					"referencedColumnName": "id"
+				}
+			],
+			"onDelete": "CASCADE"
+		},
+		{
+			"id": "a2d45d24-4f02-417b-a51e-a9ec5d85f25e",
+			"name": "FK_1a293794a41504f1697769bfbe7",
+			"referencedTable": "artists",
+			"referencedTableId": "0517847b-2a48-4413-b920-9d8e4036d599",
+			"referencedTableColumns": [
+				{
+					"id": "267141af-9406-4603-ab25-4a2a2478ef99",
+					"fieldName": "name",
+					"fieldType": "smalltext",
+					"isUnique": false,
+					"description": "Name of artist"
+				},
+				{
+					"id": "48fb58ed-13fd-4c23-a36a-bf6b940ec0e0",
+					"fieldName": "popular",
+					"fieldType": "integer",
+					"isUnique": false,
+					"description": "Popularity of artist"
+				},
+				{
+					"id": "401a9a9c-1931-4ea5-da06-2cc83b1acae5",
+					"fieldName": "uri",
+					"fieldType": "text",
+					"isUnique": false,
+					"description": "Link to artist page"
+				}
+			],
+			"columns": [
+				{
+					"referencedColumnId": "id",
+					"id": "09cc0adb-adc1-41a9-a58f-e1ed46c4292a",
+					"fieldName": "artist_id",
+					"fieldType": "uuid",
+					"isUnique": true,
+					"description": "relation with artist",
+					"referencedColumnName": "id"
+				}
+			],
+			"onDelete": "CASCADE"
+		}
+	],
+	"name": "users_artists",
+	"description": null,
+	"ver": "25.10.27.1759",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "595c0d8e-ada3-41fc-a4a3-5e5628caf58b",
+	"generationStrategy": "uuid",
+	"rolesRead": [],
+	"rolesWrite": []
+}

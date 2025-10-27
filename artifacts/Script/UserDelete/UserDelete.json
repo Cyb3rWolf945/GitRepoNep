@@ -1,0 +1,26 @@
+{
+	"id": "1e6c2781-d404-407f-ac0b-5040a5728eb2",
+	"createdAt": "2025-10-26T10:32:18.000Z",
+	"createdBy": "admin",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "7c7a9899-beb6-43bf-bd39-860d70b200cb",
+			"name": "users",
+			"contextname": "users"
+		}
+	],
+	"apis": [],
+	"name": "UserDelete",
+	"ver": "25.10.26.1034",
+	"description": "Delete a specifc user based on id",
+	"folder": "",
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "b5eacc3c-a01b-4386-9232-5ae5db4c46d8",
+	"package": "595c0d8e-ada3-41fc-a4a3-5e5628caf58b"
+}

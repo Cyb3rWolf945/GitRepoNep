@@ -1,0 +1,36 @@
+{
+	"id": "7c7a9899-beb6-43bf-bd39-860d70b200cb",
+	"createdAt": "2025-10-23T00:13:45.000Z",
+	"createdBy": "admin",
+	"fields": [
+		{
+			"id": "106eb8e1-9086-4eba-eaac-5e2495a6ca62",
+			"fieldName": "EMAIL",
+			"fieldType": "smalltext",
+			"isUnique": true
+		},
+		{
+			"id": "a518c3f4-d01d-49e9-ca78-e34101de1030",
+			"fieldName": "PASSWORD_HASH",
+			"fieldType": "smalltext",
+			"isUnique": false
+		},
+		{
+			"id": "e08b1e2c-5011-4df2-a55b-fafafd259d5a",
+			"fieldName": "DISPLAY_NAME",
+			"fieldType": "smalltext",
+			"isUnique": false
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"name": "users",
+	"description": "Table for users Spotify Demo App",
+	"ver": "25.10.24.1646",
+	"enableAudit": false,
+	"includeDataInPackage": true,
+	"package": "595c0d8e-ada3-41fc-a4a3-5e5628caf58b",
+	"generationStrategy": "uuid",
+	"rolesRead": [],
+	"rolesWrite": []
+}

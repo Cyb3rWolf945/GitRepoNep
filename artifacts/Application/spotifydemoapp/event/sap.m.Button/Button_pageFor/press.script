@@ -1,0 +1,4 @@
+// Press Forward
+const q = searchBarInput.getValue();
+PaginationService.instance.nextPage();
+PaginationService.instance.SearchApiRequest(q);

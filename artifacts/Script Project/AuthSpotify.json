@@ -1,0 +1,9 @@
+{
+	"id": "b5eacc3c-a01b-4386-9232-5ae5db4c46d8",
+	"createdAt": "2025-10-23T20:11:10.000Z",
+	"createdBy": "admin",
+	"name": "AuthSpotify",
+	"description": "autentication for login",
+	"ver": "25.10.27.1815",
+	"package": "595c0d8e-ada3-41fc-a4a3-5e5628caf58b"
+}

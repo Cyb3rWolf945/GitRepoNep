@@ -1,0 +1,126 @@
+{
+	"id": "c4c33548-5ed5-4cb5-b558-2c6062eea5c5",
+	"createdAt": "2025-10-23T00:31:37.000Z",
+	"createdBy": "admin",
+	"fields": [
+		{
+			"id": "48890248-dc3a-465c-eca2-c03354d9165a",
+			"fieldName": "TRACK_ID",
+			"fieldType": "uuid",
+			"isUnique": true
+		},
+		{
+			"id": "057a8c41-9ba1-45be-e57c-b6d8fb1fe6a1",
+			"fieldName": "PLAYLIST_ID",
+			"fieldType": "uuid",
+			"isUnique": false
+		},
+		{
+			"id": "56c397aa-10b5-4888-96ed-37d3f7d6550a",
+			"fieldName": "SPOTIFY_TRACK_ID",
+			"fieldType": "smalltext",
+			"isUnique": false
+		},
+		{
+			"id": "cdd21384-d630-40b5-ad4a-03b05f6b4a08",
+			"fieldName": "TRACK_NAME",
+			"fieldType": "smalltext",
+			"isUnique": false
+		},
+		{
+			"id": "340b97a8-ac23-491d-d224-4e715d37d2da",
+			"fieldName": "ARTISTS",
+			"fieldType": "smalltext",
+			"isUnique": false
+		},
+		{
+			"id": "61c19ec0-2363-4d9a-a514-b98d72e09a73",
+			"fieldName": "ALBUM_NAME",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "e23ed7ce-d438-4584-bc04-08ce47ca3ccf",
+			"fieldName": "DURATION_MS",
+			"fieldType": "integer",
+			"isUnique": false
+		},
+		{
+			"id": "eebe7f6e-b379-489a-e3f7-889ab28cc03d",
+			"fieldName": "PREVIEW_URL",
+			"fieldType": "mediumtext",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "af997b49-4b0e-4789-d935-996d694de45d",
+			"fieldName": "IMAGE_URL",
+			"fieldType": "mediumtext",
+			"isUnique": false,
+			"isNullable": true
+		},
+		{
+			"id": "e3983fe6-7177-45ca-f857-3ef3a4870dde",
+			"fieldName": "ADDED_AT",
+			"fieldType": "timestamptz",
+			"isUnique": false
+		}
+	],
+	"indices": [],
+	"foreignKeys": [
+		{
+			"id": "00b51249-6198-422d-bdbb-8e26d49484ad",
+			"name": "FK_f5f326b554be2561ce7aa46bd6e",
+			"referencedTable": "user_playlists",
+			"referencedTableId": "e3b77e2f-9d4e-4519-b182-8c4e4b55ce2b",
+			"referencedTableColumns": [
+				{
+					"id": "9b10dd9f-bbc4-4f99-83ef-a60ad2a17b5c",
+					"fieldName": "PLAYLIST_ID",
+					"fieldType": "uuid",
+					"isUnique": true
+				},
+				{
+					"id": "f20df01c-280d-48e9-8b13-5cd1904ce066",
+					"fieldName": "USER_ID",
+					"fieldType": "uuid",
+					"isUnique": false
+				},
+				{
+					"id": "334d5c16-b281-4778-e8c1-300eb6f4a6b3",
+					"fieldName": "NAME",
+					"fieldType": "smalltext",
+					"isUnique": false
+				},
+				{
+					"id": "63d5ab0e-6fa6-4422-e06f-454470e1417d",
+					"fieldName": "DESCRIPTION",
+					"fieldType": "mediumtext",
+					"isUnique": false,
+					"isNullable": true
+				}
+			],
+			"columns": [
+				{
+					"referencedColumnId": "id",
+					"id": "057a8c41-9ba1-45be-e57c-b6d8fb1fe6a1",
+					"fieldName": "PLAYLIST_ID",
+					"fieldType": "uuid",
+					"isUnique": false,
+					"referencedColumnName": "id"
+				}
+			],
+			"onDelete": "CASCADE"
+		}
+	],
+	"name": "playlist_tracks",
+	"description": "playlist tracks for spotify demo app",
+	"ver": "25.10.23.2048",
+	"enableAudit": false,
+	"includeDataInPackage": true,
+	"package": "595c0d8e-ada3-41fc-a4a3-5e5628caf58b",
+	"generationStrategy": null,
+	"rolesRead": [],
+	"rolesWrite": []
+}

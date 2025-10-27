@@ -1,0 +1,216 @@
+{
+	"id": "595c0d8e-ada3-41fc-a4a3-5e5628caf58b",
+	"createdAt": "2025-10-22T22:58:26.000Z",
+	"createdBy": "admin",
+	"git": {
+		"remote": "https://github.com/Cyb3rWolf945/GitRepoNep.git",
+		"branch": "Developer"
+	},
+	"name": "elearning-dev",
+	"description": "For the eLearning package (DEMO)",
+	"ver": "25.10.27.1921",
+	"enableCICD": true,
+	"internalReadOnly": false,
+	"oeVersion": null,
+	"excludeTemplateFiles": false,
+	"roles": [],
+	"apps": [
+		{
+			"id": "5b694825-1bf9-4df0-9319-a4d04b30b16b",
+			"application": "spotifydemoapp",
+			"title": "",
+			"description": ""
+		}
+	],
+	"api": [
+		{
+			"id": "ed7fc8e7-cf5c-43de-adb8-c1b067f22b3f",
+			"name": "users_spotify_demo",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "d505685d-ecc8-4259-a09c-eada0b66a71d",
+			"name": "artists",
+			"description": "Artists for Spotify Demo",
+			"apiGroup": null
+		},
+		{
+			"id": "81e2c678-0e80-4b8a-be6b-d4b0c4e79974",
+			"name": "TIDALAPI",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "546af9ed-e5a1-433f-b8f2-14f3d1ad3365",
+			"name": "users",
+			"description": null,
+			"apiGroup": null
+		},
+		{
+			"id": "2f5fa874-b171-431e-9760-cfba55eeac61",
+			"name": "Spotify",
+			"description": null,
+			"apiGroup": null
+		}
+	],
+	"odataSource": [],
+	"odataMock": [],
+	"dictionary": [
+		{
+			"id": "fd04dc61-265e-47ee-8398-56008e7a3149",
+			"name": "users_artists",
+			"description": null
+		},
+		{
+			"id": "e3b77e2f-9d4e-4519-b182-8c4e4b55ce2b",
+			"name": "user_playlists",
+			"description": "Junction table between users and playlists"
+		},
+		{
+			"id": "c4c33548-5ed5-4cb5-b558-2c6062eea5c5",
+			"name": "playlist_tracks",
+			"description": "playlist tracks for spotify demo app"
+		},
+		{
+			"id": "7c7a9899-beb6-43bf-bd39-860d70b200cb",
+			"name": "users",
+			"description": "Table for users Spotify Demo App"
+		},
+		{
+			"id": "0517847b-2a48-4413-b920-9d8e4036d599",
+			"name": "artists",
+			"description": "Artists for Spotify Demo"
+		}
+	],
+	"jsclass": [
+		{
+			"id": "db4a698a-258f-410e-b57c-8240fb9026bc",
+			"name": "artist_user",
+			"description": "Add artist to table and relationship with user"
+		},
+		{
+			"id": "d5a225bc-d511-4c1f-8801-c71dcb8bc9e5",
+			"name": "UpdateUser",
+			"description": "update user by email"
+		},
+		{
+			"id": "a1b87979-8c47-463e-9856-d5e943abfe45",
+			"name": "test",
+			"description": null
+		},
+		{
+			"id": "8951e4f6-0e0f-4d3a-a3ba-61cfe9ece209",
+			"name": "GetUserByEmail",
+			"description": "Get users info by email"
+		},
+		{
+			"id": "70b0cdb5-c9fa-4acb-919f-108ab7e39b08",
+			"name": "UpdateUser",
+			"description": "update user for spotify demo"
+		},
+		{
+			"id": "6bdec92e-55b9-4134-b3f5-77b93d3b34b7",
+			"name": "GetUserInfo",
+			"description": "Get user info by email"
+		},
+		{
+			"id": "4180608e-0f92-4cfc-b5a1-5bb4a891aac9",
+			"name": "request_token",
+			"description": "request token for API calls"
+		},
+		{
+			"id": "1e6c2781-d404-407f-ac0b-5040a5728eb2",
+			"name": "UserDelete",
+			"description": "Delete a specifc user based on id"
+		},
+		{
+			"id": "1280f7b6-988d-43c0-a32d-0a5737dc03e7",
+			"name": "RegisterScript",
+			"description": "Register user"
+		},
+		{
+			"id": "07cd030c-7cfb-4c59-bbe3-599b53e37361",
+			"name": "LoginScript",
+			"description": "Login auth"
+		}
+	],
+	"jsscript_group": [
+		{
+			"id": "b5eacc3c-a01b-4386-9232-5ae5db4c46d8",
+			"name": "AuthSpotify",
+			"description": "autentication for login"
+		},
+		{
+			"id": "0dd37d79-f5d0-4274-8887-6c0e6ff8d726",
+			"name": "request_token_spotify",
+			"description": "request token for API calls"
+		},
+		{
+			"id": "04e99af1-4fdb-4a44-ad87-736c5e14fdca",
+			"name": "UserSpotify",
+			"description": "users_scripts for spotify demo"
+		}
+	],
+	"theme": [],
+	"pdf": [],
+	"rulesengine": [],
+	"reports": [],
+	"api_authentication": [],
+	"api_group": [],
+	"tile": [
+		{
+			"id": "864c5c77-c959-48e3-b314-8ed8e06d0ad2",
+			"description": null,
+			"name": "SpotifyDemo"
+		}
+	],
+	"tile_layout": [
+		{
+			"id": "1e37047d-d1f4-4102-945c-9df892db38c0",
+			"NAME": "SpotifyTileLayout"
+		}
+	],
+	"category": [
+		{
+			"id": "da223337-6a6e-4322-a8d0-54eef41a4e5d",
+			"description": null,
+			"name": "Applications-Demo"
+		}
+	],
+	"tilegroup_layout": [],
+	"launchpad": [
+		{
+			"id": "a4a16308-db30-44b3-a651-8e0d9a7891b3",
+			"name": "Applications",
+			"description": null
+		}
+	],
+	"launchpad_layout": [
+		{
+			"id": "70161757-fd62-4819-813d-ae2d292cc55d",
+			"NAME": "test",
+			"DESCR": null
+		},
+		{
+			"id": "3a76cc31-446f-46d5-847e-1392624be4fb",
+			"NAME": "testlight",
+			"DESCR": null
+		}
+	],
+	"certificates": [],
+	"role": [],
+	"systems": [],
+	"doc": [],
+	"wf_notifications": [],
+	"department": [],
+	"script_scheduler": [],
+	"wf_definition": [],
+	"connector": [],
+	"events": [],
+	"code_snippets": [],
+	"wf_determination": [],
+	"wf_taskaction": [],
+	"theme_ui5": [],
+	"webapp": []
+}
