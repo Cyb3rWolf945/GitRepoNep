@@ -1,0 +1,31 @@
+{
+	"id": "1165bb5f-f2a4-496a-920a-a727cfd4eb9a",
+	"createdAt": "2025-10-28T17:02:54.000Z",
+	"createdBy": "admin",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "fd04dc61-265e-47ee-8398-56008e7a3149",
+			"name": "users_artists",
+			"contextname": "users_artists"
+		},
+		{
+			"id": "0517847b-2a48-4413-b920-9d8e4036d599",
+			"name": "artists",
+			"contextname": "artists"
+		}
+	],
+	"apis": [],
+	"name": "GetArtistsByUser",
+	"ver": "25.10.28.1800",
+	"description": "Get artists for a specific user",
+	"folder": "",
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "b5eacc3c-a01b-4386-9232-5ae5db4c46d8",
+	"package": "595c0d8e-ada3-41fc-a4a3-5e5628caf58b"
+}

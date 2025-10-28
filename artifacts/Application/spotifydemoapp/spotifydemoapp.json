@@ -2362,7 +2362,7 @@
 														{
 															"attribute": "styleClassMargin",
 															"grouping": "Properties",
-															"value": "sapUiMediumMarginTop",
+															"value": "sapUiLargeMargin",
 															"script": "",
 															"translation": []
 														},
@@ -2375,6 +2375,270 @@
 														}
 													],
 													"data": []
+												},
+												{
+													"fieldNo": "56775c86-5a0f-4ab4-c646-a255508c31fc",
+													"fieldName": "Table",
+													"fieldParent": "4fcbade2-226f-4ae0-d6c2-737cf04e8428",
+													"fieldType": "sap.m.Table",
+													"script": "",
+													"customComponent": false,
+													"bindingValue": "users_spotify_demo>ArtistsUser",
+													"bindingType": "h",
+													"bindingSource": "API",
+													"bindingParentID": "ed7fc8e7-cf5c-43de-adb8-c1b067f22b3f",
+													"bindingPathID": "2cae8314-a929-4800-b0e2-8d721886604f",
+													"request": [],
+													"response": [],
+													"attributes": [],
+													"data": [
+														{
+															"fieldNo": "7e706eb1-1c39-459e-a4a7-0557aab3e247",
+															"fieldName": "colTablea_name",
+															"fieldParent": "56775c86-5a0f-4ab4-c646-a255508c31fc",
+															"fieldType": "sap.m.Column",
+															"script": "",
+															"customComponent": false,
+															"request": [],
+															"response": [],
+															"attributes": [],
+															"data": [
+																{
+																	"fieldNo": "36eef8d4-ed05-451c-b60d-900adf7deb5c",
+																	"fieldName": "colHTablea_name",
+																	"fieldParent": "7e706eb1-1c39-459e-a4a7-0557aab3e247",
+																	"fieldType": "sap.m.Text",
+																	"script": "",
+																	"customComponent": false,
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "text",
+																			"grouping": "Properties",
+																			"value": "Name",
+																			"script": "",
+																			"translation": []
+																		}
+																	],
+																	"data": []
+																}
+															]
+														},
+														{
+															"fieldNo": "dba07d5a-2bbb-48cd-8dd8-9f0313e9ff96",
+															"fieldName": "colTablea_popular",
+															"fieldParent": "56775c86-5a0f-4ab4-c646-a255508c31fc",
+															"fieldType": "sap.m.Column",
+															"script": "",
+															"customComponent": false,
+															"request": [],
+															"response": [],
+															"attributes": [],
+															"data": [
+																{
+																	"fieldNo": "505eb105-a06e-4060-89d7-042237fe942f",
+																	"fieldName": "colHTablea_popular",
+																	"fieldParent": "dba07d5a-2bbb-48cd-8dd8-9f0313e9ff96",
+																	"fieldType": "sap.m.Text",
+																	"script": "",
+																	"customComponent": false,
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "text",
+																			"grouping": "Properties",
+																			"value": "Popular",
+																			"script": "",
+																			"translation": []
+																		}
+																	],
+																	"data": []
+																}
+															]
+														},
+														{
+															"fieldNo": "5058ca11-1b54-4167-b0a6-f7c38242c51b",
+															"fieldName": "colTablea_uri",
+															"fieldParent": "56775c86-5a0f-4ab4-c646-a255508c31fc",
+															"fieldType": "sap.m.Column",
+															"script": "",
+															"customComponent": false,
+															"request": [],
+															"response": [],
+															"attributes": [],
+															"data": [
+																{
+																	"fieldNo": "eb171c3f-36f1-45cc-b7af-4e96a0d38c82",
+																	"fieldName": "colHTablea_uri",
+																	"fieldParent": "5058ca11-1b54-4167-b0a6-f7c38242c51b",
+																	"fieldType": "sap.m.Text",
+																	"script": "",
+																	"customComponent": false,
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "text",
+																			"grouping": "Properties",
+																			"value": "Link",
+																			"script": "",
+																			"translation": []
+																		}
+																	],
+																	"data": []
+																}
+															]
+														},
+														{
+															"fieldNo": "2d110ba2-71ed-4b19-ca6d-078421ff61fd",
+															"fieldName": "colTablea_exclude",
+															"fieldParent": "56775c86-5a0f-4ab4-c646-a255508c31fc",
+															"fieldType": "sap.m.Column",
+															"script": "",
+															"customComponent": false,
+															"request": [],
+															"response": [],
+															"attributes": [],
+															"data": [
+																{
+																	"fieldNo": "a6503220-ed05-498b-ce29-8b412cd68044",
+																	"fieldName": "Text4",
+																	"fieldParent": "2d110ba2-71ed-4b19-ca6d-078421ff61fd",
+																	"fieldType": "sap.m.Text",
+																	"script": "",
+																	"customComponent": false,
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "text",
+																			"grouping": "Properties",
+																			"value": "Remove",
+																			"script": "",
+																			"translation": []
+																		}
+																	],
+																	"data": []
+																}
+															]
+														},
+														{
+															"fieldNo": "6b27fd1e-8799-4be1-b6b0-4e72699a63b4",
+															"fieldName": "colItemTable",
+															"fieldParent": "56775c86-5a0f-4ab4-c646-a255508c31fc",
+															"fieldType": "sap.m.ColumnListItem",
+															"script": "",
+															"customComponent": false,
+															"request": [],
+															"response": [],
+															"attributes": [],
+															"data": [
+																{
+																	"fieldNo": "96e423b1-6003-4a81-c60f-d3528b1bda26",
+																	"fieldName": "txtTablea_name",
+																	"fieldParent": "6b27fd1e-8799-4be1-b6b0-4e72699a63b4",
+																	"fieldType": "sap.m.Text",
+																	"script": "",
+																	"customComponent": false,
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "text",
+																			"grouping": "Properties",
+																			"value": "{a_name}",
+																			"script": "",
+																			"translation": []
+																		}
+																	],
+																	"data": []
+																},
+																{
+																	"fieldNo": "b2e9a6f0-ab65-4763-ccc3-6684b78d2b0b",
+																	"fieldName": "txtTablea_popular",
+																	"fieldParent": "6b27fd1e-8799-4be1-b6b0-4e72699a63b4",
+																	"fieldType": "sap.m.Text",
+																	"script": "",
+																	"customComponent": false,
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "text",
+																			"grouping": "Properties",
+																			"value": "{a_popular}",
+																			"script": "",
+																			"translation": []
+																		}
+																	],
+																	"data": []
+																},
+																{
+																	"fieldNo": "15800b83-0449-4ced-e181-1c7202a2b849",
+																	"fieldName": "Link",
+																	"fieldParent": "6b27fd1e-8799-4be1-b6b0-4e72699a63b4",
+																	"fieldType": "sap.m.Link",
+																	"script": "",
+																	"customComponent": false,
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "text",
+																			"grouping": "Properties",
+																			"value": "{a_uri}",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "href",
+																			"grouping": "Properties",
+																			"value": "{a_uri}",
+																			"script": "",
+																			"translation": []
+																		}
+																	],
+																	"data": []
+																},
+																{
+																	"fieldNo": "88859921-86a7-4c84-9c4c-01075d34af0f",
+																	"fieldName": "Icon3",
+																	"fieldParent": "6b27fd1e-8799-4be1-b6b0-4e72699a63b4",
+																	"fieldType": "sap.ui.core.Icon",
+																	"script": "",
+																	"customComponent": false,
+																	"request": [],
+																	"response": [],
+																	"attributes": [
+																		{
+																			"attribute": "press",
+																			"grouping": "Events",
+																			"value": "Anonymous Function",
+																			"script": "file://event/sap.ui.core.Icon/Icon3/press.script",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "src",
+																			"grouping": "Properties",
+																			"value": "sap-icon://far/circle-xmark",
+																			"script": "",
+																			"translation": []
+																		},
+																		{
+																			"attribute": "styleClass",
+																			"grouping": "Properties",
+																			"value": "table_button",
+																			"script": "",
+																			"translation": []
+																		}
+																	],
+																	"data": []
+																}
+															]
+														}
+													]
 												}
 											]
 										},
@@ -2911,7 +3175,7 @@
 									"fieldName": "onInit2",
 									"fieldParent": "0cfbb6a6-41fa-4de5-ca2f-cf561d147caa",
 									"fieldType": "neptune.event.oninit",
-									"script": "",
+									"script": "file://script/neptune.event.oninit/onInit2.js",
 									"customComponent": false,
 									"request": [],
 									"response": [],
@@ -4034,6 +4298,50 @@
 							"attributes": [],
 							"data": [
 								{
+									"fieldNo": "3afba20e-dc3e-4cfb-9987-14a09aebdad6",
+									"fieldName": "RemoveArtist",
+									"fieldParent": "3234e41a-29fd-4263-8d79-f033db902f44",
+									"fieldType": "neptune.restapi",
+									"script": "",
+									"customComponent": false,
+									"restSource": "ed7fc8e7-cf5c-43de-adb8-c1b067f22b3f",
+									"restOperation": "fdfcbbcc-3a16-42f1-af57-ae89c72a4170",
+									"request": [],
+									"response": [],
+									"attributes": [],
+									"data": []
+								},
+								{
+									"fieldNo": "33e9c84b-e374-4c0c-cbe0-ff7d5d7e2beb",
+									"fieldName": "GetArtists",
+									"fieldParent": "3234e41a-29fd-4263-8d79-f033db902f44",
+									"fieldType": "neptune.restapi",
+									"description": "Get artists from table definition",
+									"script": "",
+									"customComponent": false,
+									"restSource": "ed7fc8e7-cf5c-43de-adb8-c1b067f22b3f",
+									"restOperation": "10c53174-5f51-4ebf-a08f-eb3befd577e0",
+									"request": [],
+									"response": [
+										{
+											"status": "200",
+											"dataId": "2cae8314-a929-4800-b0e2-8d721886604f",
+											"modelFieldNo": "56775c86-5a0f-4ab4-c646-a255508c31fc"
+										}
+									],
+									"attributes": [
+										{
+											"attribute": "preRequestHook",
+											"grouping": "Events",
+											"value": "Anonymous Function",
+											"script": "file://event/neptune.restapi/GetArtists/preRequestHook.js",
+											"language": "javascript",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
 									"fieldNo": "c99ecf9d-3e55-424a-b9ec-8f828207fe7d",
 									"fieldName": "ArtistApi",
 									"fieldParent": "3234e41a-29fd-4263-8d79-f033db902f44",
@@ -4074,7 +4382,7 @@
 										{
 											"status": "200",
 											"dataId": "38b60e27-e967-4ce2-c444-be86c9f475f3",
-											"modelFieldNo": "efab7ddf-96aa-465d-9019-fda9923ed982"
+											"modelFieldNo": "8a4ce6ad-bee7-4941-c255-524dc1189112"
 										}
 									],
 									"attributes": [
@@ -4225,17 +4533,29 @@
 					"attributes": [],
 					"data": [
 						{
-							"fieldNo": "efab7ddf-96aa-465d-9019-fda9923ed982",
+							"fieldNo": "8a4ce6ad-bee7-4941-c255-524dc1189112",
 							"fieldName": "MultiModel",
 							"fieldParent": "04cf8644-ab23-4aea-fee4-7ea8326b1bb8",
 							"fieldType": "neptune.model",
 							"script": "",
 							"customComponent": false,
 							"bindingValue": "Spotify>SearchDefinition",
-							"bindingType": "u",
+							"bindingType": "h",
 							"bindingSource": "API",
 							"bindingParentID": "2f5fa874-b171-431e-9760-cfba55eeac61",
 							"bindingPathID": "38b60e27-e967-4ce2-c444-be86c9f475f3",
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						},
+						{
+							"fieldNo": "1bda558b-3f78-4b2c-e0cc-73afe35bf6d4",
+							"fieldName": "ModelObject",
+							"fieldParent": "04cf8644-ab23-4aea-fee4-7ea8326b1bb8",
+							"fieldType": "neptune.model.object",
+							"script": "",
+							"customComponent": false,
 							"request": [],
 							"response": [],
 							"attributes": [],
@@ -4286,7 +4606,7 @@
 		}
 	],
 	"componentInterface": [],
-	"ver": "25.10.27.1905",
+	"ver": "25.10.28.1949",
 	"application": "spotifydemoapp",
 	"title": "",
 	"description": "",
@@ -4332,7 +4652,7 @@
 		{
 			"id": "ed7fc8e7-cf5c-43de-adb8-c1b067f22b3f",
 			"name": "users_spotify_demo",
-			"ver": "25.10.27.1821"
+			"ver": "25.10.28.1943"
 		},
 		{
 			"id": "2f5fa874-b171-431e-9760-cfba55eeac61",

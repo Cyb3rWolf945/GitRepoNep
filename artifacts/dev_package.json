@@ -58,9 +58,9 @@
 	"odataMock": [],
 	"dictionary": [
 		{
-			"id": "fd04dc61-265e-47ee-8398-56008e7a3149",
+			"id": "fd8f170e-f402-4d60-b074-2511cf61da76",
 			"name": "users_artists",
-			"description": null
+			"description": "Junction table between users and artists"
 		},
 		{
 			"id": "e3b77e2f-9d4e-4519-b182-8c4e4b55ce2b",
@@ -120,6 +120,11 @@
 			"description": "request token for API calls"
 		},
 		{
+			"id": "32e39981-5bc7-477d-9ddf-de5e88e78e52",
+			"name": "remove_artist",
+			"description": "remove artist from fav"
+		},
+		{
 			"id": "1e6c2781-d404-407f-ac0b-5040a5728eb2",
 			"name": "UserDelete",
 			"description": "Delete a specifc user based on id"
@@ -128,6 +133,11 @@
 			"id": "1280f7b6-988d-43c0-a32d-0a5737dc03e7",
 			"name": "RegisterScript",
 			"description": "Register user"
+		},
+		{
+			"id": "1165bb5f-f2a4-496a-920a-a727cfd4eb9a",
+			"name": "GetArtistsByUser",
+			"description": "Get artists for a specific user"
 		},
 		{
 			"id": "07cd030c-7cfb-4c59-bbe3-599b53e37361",

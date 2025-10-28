@@ -41,6 +41,15 @@
 
 /***
 
+COSTUMIZE CSS FOR TABLE BUTTON
+
+***/
+.table_button {
+  cursor: pointer;
+}
+
+/***
+
 COSTUMIZE CSS FOR FORM
 
 ***/

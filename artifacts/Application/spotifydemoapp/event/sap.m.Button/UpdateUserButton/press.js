@@ -31,8 +31,8 @@ apiUpdateUser(options)
         sap.m.MessageToast.show("User Updated Successfully");
         const updatedUserData = {
             ...user,
-            email: email,
-            display_name: display_name
+            user_email: email,
+            user_display_name: display_name
         };
         localStorage.setItem('userData', JSON.stringify(updatedUserData));
         displayUserName();

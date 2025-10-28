@@ -1,7 +1,5 @@
-// Update user info and display name
-
 const email = getEmail();
-
+const _id_user = getId();
 /**
  * Name: users_spotify_demo
  * Description:
@@ -16,4 +14,17 @@ var options = { data: { email: email} };
 apiGetUserInfo(options);
 
 
-displayUserName();
+/**
+ * Name: users_spotify_demo
+ * Description:
+ *
+ * Path: /GetArtistById
+ * Method: POST
+ *
+ * Body:
+ */
+var options = { data: {id: _id_user} };
+
+apiGetArtists(options);
+
+

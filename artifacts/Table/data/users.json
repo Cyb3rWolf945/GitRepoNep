@@ -1,42 +1,12 @@
 [
 	{
-		"id": "b995c976-9451-4b56-ba2a-82a177d44822",
-		"createdAt": "1761479106058",
-		"updatedAt": "1761479106058",
-		"createdBy": "tutas",
-		"updatedBy": "tutas",
-		"EMAIL": "ajosegoncalves02@gmail.com",
-		"PASSWORD_HASH": "$2a$10$nYe/SpiSaRQQ76wdyannK.Mer7stvhkuUXvcNxWGGYD2mCO1XTwP.",
-		"DISPLAY_NAME": "tutas"
-	},
-	{
-		"id": "48009978-ca5f-4d0b-8141-a7d33a16deb5",
-		"createdAt": "1761488913874",
-		"updatedAt": "1761488913873",
-		"createdBy": "antonio3",
-		"updatedBy": "antonio3",
-		"EMAIL": "ajosegoncalves03@gmail.com",
-		"PASSWORD_HASH": "$2a$10$wJgqvOUvD1tWwWu13Ih2N..8mPEioO9/F3US.wVx8ZO.1XMDrhlTC",
-		"DISPLAY_NAME": "antonio3"
-	},
-	{
-		"id": "223f7219-c546-4f13-9c6b-be6fe7c39b31",
-		"createdAt": "1761487071153",
-		"updatedAt": "1761591790993",
-		"createdBy": "antonio01",
-		"updatedBy": "admin",
+		"id": "96038e82-0b5d-49cd-b079-2091594ea57a",
+		"createdAt": "1761674325288",
+		"updatedAt": "1761674325288",
+		"createdBy": "antonio",
+		"updatedBy": "antonio",
 		"EMAIL": "ajosegoncalves01@gmail.com",
-		"PASSWORD_HASH": "$2a$10$jq/aNkkmPIx2DGKAxHVqRuLYc8gMrVdGnuZo7WyUqxsanAeGIYi/m",
-		"DISPLAY_NAME": "antonio01111"
-	},
-	{
-		"id": "0620d864-885e-4ed9-b110-329d3e533a0a",
-		"createdAt": "1761590102045",
-		"updatedAt": "1761590149647",
-		"createdBy": "Vasco",
-		"updatedBy": "admin",
-		"EMAIL": "Vasco@gmail.com",
-		"PASSWORD_HASH": "$2a$10$Ik/8xiLxBZ1A326btUtzpuIFnUhZef1kv7klT47E4rDZwCOqNYbf.",
-		"DISPLAY_NAME": "Vasco111"
+		"PASSWORD_HASH": "$2a$10$2KCKoDryzhBvrpFcVBfdnu8rG/aGa2AQ03eYxMLfcKyxIoPeL5/Xu",
+		"DISPLAY_NAME": "antonio"
 	}
 ]

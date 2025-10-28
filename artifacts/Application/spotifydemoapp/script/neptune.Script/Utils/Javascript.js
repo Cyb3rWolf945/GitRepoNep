@@ -12,6 +12,18 @@ function displayUserName() {
         }
 }
 
+function getId(){
+       // Get user data from localStorage
+        const userData = localStorage.getItem('userData');
+        
+        if (userData) {
+            // Parse the user data
+            const user = JSON.parse(userData);
+
+            return user.id;
+        }
+}
+
 
 function verify_user(){
 
