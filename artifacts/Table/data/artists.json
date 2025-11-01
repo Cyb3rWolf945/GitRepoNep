@@ -1,0 +1,35 @@
+[
+	{
+		"id": "c9616612-8fad-4d03-b6b1-c41341173f39",
+		"createdAt": "1762022021275",
+		"updatedAt": "1762022021274",
+		"createdBy": "admin",
+		"updatedBy": "admin",
+		"name": "Emanuel",
+		"popular": 36,
+		"uri": "https://open.spotify.com/artist/1xuWbulfiPxqP5rucKLiQN",
+		"image": "https://i.scdn.co/image/f02846dafb485dc6c7712b52443fab7e392f56a8"
+	},
+	{
+		"id": "c3325930-cdff-4a2a-83aa-6b0b40f16589",
+		"createdAt": "1762021778075",
+		"updatedAt": "1762021778075",
+		"createdBy": "admin",
+		"updatedBy": "admin",
+		"name": "Eminem",
+		"popular": 88,
+		"uri": "https://open.spotify.com/artist/7dGJo4pcD2V6oG8kP0tJRR",
+		"image": "https://i.scdn.co/image/ab6761610000e5eba00b11c129b27a88fc72f36b"
+	},
+	{
+		"id": "ae27cf7b-1fb1-45e2-8985-a5f1a314e5c9",
+		"createdAt": "1762022011377",
+		"updatedAt": "1762022011377",
+		"createdBy": "admin",
+		"updatedBy": "admin",
+		"name": "Emicida",
+		"popular": 60,
+		"uri": "https://open.spotify.com/artist/2d9LRvQJnAXRijqIJDDs2K",
+		"image": "https://i.scdn.co/image/ab6761610000e5eb1a143a1a56d7fd721eb43fd7"
+	}
+]

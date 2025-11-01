@@ -8,5 +8,15 @@
 		"EMAIL": "ajosegoncalves01@gmail.com",
 		"PASSWORD_HASH": "$2a$10$2KCKoDryzhBvrpFcVBfdnu8rG/aGa2AQ03eYxMLfcKyxIoPeL5/Xu",
 		"DISPLAY_NAME": "antonio"
+	},
+	{
+		"id": "3102a0dd-c84b-4110-996a-2006009464d8",
+		"createdAt": "1762013616040",
+		"updatedAt": "1762020315575",
+		"createdBy": "antonio",
+		"updatedBy": "admin",
+		"EMAIL": "ajosegoncalves02@gmail.com",
+		"PASSWORD_HASH": "$2a$10$9Jo5maE7iH/DDw4xaUTcoOI3ufDe4uPCRm0dHjzmER2UjHMuxVE3K",
+		"DISPLAY_NAME": "antonio"
 	}
 ]

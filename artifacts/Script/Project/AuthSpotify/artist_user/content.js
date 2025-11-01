@@ -6,6 +6,7 @@ const id_user = data.id;
 const name = data.name;
 const popular = data.popular;
 const uri = data.uri;
+const img = data.img;
 
 // Insert if not exist artist with same uri
 
@@ -17,45 +18,71 @@ try {
 
     // If artist doesn't exist, insert new record
     if (!existingArtist) {
-        const newArtist = await entities.artists.insert({
+        const insertResult = await entities.artists.insert({
             name: name,
             popular: popular,
             uri: uri,
+            image: img
         });
 
-        const artistId = newArtist.generatedMaps[0].id;
+        // Get the inserted ID from the result
+        const insertedId = insertResult.identifiers[0].id;
 
-        // Insert into junction table
-        await entities.users_artists.insert({
-            user_id: id_user,
-            artist_id: artistId,
-        });
+        // Retrieve the full entity with the generated ID
+        const newArtist = await entities.artists.findOne(insertedId);
 
-        // Return success response with created artist
-        result.data = {
-            success: true,
-            message: "Artist created successfully",
-            artist: newArtist.generatedMaps[0],
-        };
-    } else {
+        console.log(newArtist.id);
 
-         // Artist already exists
-
-        const artistId = existingArtist.id;
-
-        // Insert into junction table
-        await entities.users_artists.insert({
-            user_id: id_user,
-            artist_id: artistId,
-        });
+        await entities.users_artists
+            .createQueryBuilder()
+            .insert()
+            .values({
+                user_id: id_user,
+                artist_id: newArtist.id,
+                createdBy: "admin",
+                updatedBy: "admin",
+            })
+            .execute();
 
         result.data = {
             success: false,
             message: "Artist with this URI already exists",
-            artist: existingArtist,
+            artist: newArtist,
         };
+    } else {
+        // Artist already exists
+        const artistId = existingArtist.id;
+
+        // case artist exist and user in users artists table
+        const existingUserArtist = await entities.users_artists.findOne({
+            where: { user_id: id_user, artist_id: artistId },
+        });
+
+        if (!existingUserArtist) {
+            await entities.users_artists
+                .createQueryBuilder()
+                .insert()
+                .values({
+                    user_id: id_user,
+                    artist_id: artistId,
+                    createdBy: "admin",
+                    updatedBy: "admin",
+                })
+                .execute();
+
+            result.data = {
+                success: true,
+                message: "Add artist",
+                artist: existingArtist,
+            };
+        } else {
+            result.data = {
+                success: false,
+                message: "Artist already added to user list",
+                artist: existingArtist,
+            };
+        }
     }
-    
 } catch (error) {
     log.error("Error inserting artist: ", error);
     fail(error);

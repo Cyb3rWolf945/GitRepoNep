@@ -674,6 +674,24 @@
 					"enabled": true,
 					"hideNameField": false,
 					"children": []
+				},
+				{
+					"id": "a328920c-45a8-4fd6-d811-7fae77040751",
+					"name": "a_image",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
 				}
 			],
 			"type": "array"
@@ -682,7 +700,7 @@
 	"documentation": [],
 	"name": "users_spotify_demo",
 	"endpoint": "/public/serverscript/users_spotify_demo",
-	"ver": "25.10.28.1943",
+	"ver": "25.11.01.1839",
 	"version": null,
 	"description": null,
 	"mediaType": null,

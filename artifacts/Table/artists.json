@@ -23,15 +23,23 @@
 			"fieldType": "mediumtext",
 			"isUnique": true,
 			"description": "Link to artist page"
+		},
+		{
+			"id": "f03332b9-afcf-4078-a9b3-5a5ab9fc3fe5",
+			"fieldName": "image",
+			"fieldType": "mediumtext",
+			"isUnique": false,
+			"isNullable": false,
+			"description": "Image for artist"
 		}
 	],
 	"indices": [],
 	"foreignKeys": [],
 	"name": "artists",
 	"description": "Artists for Spotify Demo",
-	"ver": "25.10.27.1802",
+	"ver": "25.11.01.1854",
 	"enableAudit": false,
-	"includeDataInPackage": false,
+	"includeDataInPackage": true,
 	"package": "595c0d8e-ada3-41fc-a4a3-5e5628caf58b",
 	"generationStrategy": null,
 	"rolesRead": [],

@@ -14,11 +14,16 @@
 			"id": "fd04dc61-265e-47ee-8398-56008e7a3149",
 			"name": "users_artists",
 			"contextname": "users_artists"
+		},
+		{
+			"id": "fd8f170e-f402-4d60-b074-2511cf61da76",
+			"name": "users_artists",
+			"contextname": "users_artists"
 		}
 	],
 	"apis": [],
 	"name": "artist_user",
-	"ver": "25.10.27.1815",
+	"ver": "25.11.01.1827",
 	"description": "Add artist to table and relationship with user",
 	"folder": "",
 	"content": "file:///content.js",
