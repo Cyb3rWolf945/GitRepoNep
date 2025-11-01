@@ -1,0 +1,32 @@
+// Get binding context from the pressed list item
+const context = oEvent.getSource().getBindingContext();
+
+// Get entire model data from the list item
+const data = context.getObject();
+
+ImageArtist.setSrc(data.images[0].url);
+
+LinkToArtist.setHref(data.external_urls.spotify);
+LinkToArtist.setText("Link to artist: " + data.external_urls.spotify);
+
+// Set the data to the detail page form fields
+txtSimpleForm1name.setText(data.name || '');
+txtSimpleForm1popularity.setText(data.popularity || '');
+txtSimpleForm1id.setText(data.id || '');
+
+// Navigate to ListItemDetail page
+if (mainNavContainer && ListItemDetail) {
+    try {
+        mainNavContainer.addPage(ListItemDetail);
+        
+        mainNavContainer.to(ListItemDetail);
+        
+    } catch (error) {
+        console.error('Navigation error:', error);
+        sap.m.MessageToast.show('Navigation failed: ' + error.message);
+    }
+} else {
+    const errorMsg = !mainNavContainer ? 'Navigation container not found' : 'ListItemDetail page not found';
+    console.error(errorMsg);
+    sap.m.MessageToast.show(errorMsg);
+}

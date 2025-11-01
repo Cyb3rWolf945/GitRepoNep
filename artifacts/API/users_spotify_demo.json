@@ -1,0 +1,707 @@
+{
+	"id": "ed7fc8e7-cf5c-43de-adb8-c1b067f22b3f",
+	"createdAt": "2025-10-24T22:01:32.000Z",
+	"createdBy": "admin",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "60cb260e-78ed-4e83-eb5b-52998496aff2",
+			"method": "POST",
+			"path": "/Login",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"id": "77b76130-cb79-4bdf-8ae9-f05ddfcd5f77",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"id": "15e29684-26a8-4372-c3d9-671af5ee453c",
+							"name": "",
+							"objectType": "reference"
+						}
+					]
+				},
+				{
+					"id": "b7db4455-f6b5-412d-bfdb-eaceca4dab34",
+					"status": "400",
+					"description": "",
+					"headers": [],
+					"content": []
+				}
+			],
+			"content": [
+				{
+					"objectType": "object",
+					"items": [
+						{
+							"name": "email",
+							"objectType": "string",
+							"required": true,
+							"children": []
+						},
+						{
+							"name": "password",
+							"objectType": "string",
+							"required": true,
+							"children": []
+						}
+					]
+				}
+			],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "07cd030c-7cfb-4c59-bbe3-599b53e37361"
+		},
+		{
+			"id": "54cf6a2b-5b3b-4d73-e88c-4aba6ececcf4",
+			"method": "POST",
+			"path": "/Register",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"id": "2965a4ef-0cd6-4162-9664-6fc7c871c8da",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": []
+				},
+				{
+					"id": "a7654363-9512-40a9-af66-0296f0f2a657",
+					"status": "400",
+					"description": "",
+					"headers": [],
+					"content": []
+				}
+			],
+			"content": [
+				{
+					"objectType": "object",
+					"items": [
+						{
+							"name": "email",
+							"objectType": "string",
+							"required": true,
+							"children": []
+						},
+						{
+							"name": "display_name",
+							"objectType": "string",
+							"required": true,
+							"children": []
+						},
+						{
+							"name": "password",
+							"objectType": "string",
+							"required": true,
+							"children": []
+						}
+					]
+				}
+			],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "1280f7b6-988d-43c0-a32d-0a5737dc03e7"
+		},
+		{
+			"id": "4f249d45-5998-4025-d06a-eefd2abd98c4",
+			"method": "PUT",
+			"path": "/UserUpdate",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"id": "ec48868b-b934-4b0f-ce50-0bee5c36c80a",
+					"status": "204",
+					"description": "",
+					"headers": [],
+					"content": []
+				},
+				{
+					"id": "655387f3-df44-4460-82fc-60d38c0ba357",
+					"status": "400",
+					"description": "",
+					"headers": [],
+					"content": []
+				}
+			],
+			"content": [
+				{
+					"objectType": "object",
+					"items": [
+						{
+							"name": "id",
+							"objectType": "string",
+							"required": true,
+							"children": []
+						},
+						{
+							"name": "email",
+							"objectType": "string",
+							"required": true,
+							"children": []
+						},
+						{
+							"name": "display_name",
+							"objectType": "string",
+							"required": true,
+							"children": []
+						},
+						{
+							"name": "password",
+							"objectType": "string",
+							"required": true,
+							"children": []
+						}
+					]
+				}
+			],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "d5a225bc-d511-4c1f-8801-c71dcb8bc9e5"
+		},
+		{
+			"id": "0d33c354-a996-4dcd-9380-67d148827e02",
+			"method": "POST",
+			"path": "/GetUserInfo",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"id": "e4000079-0585-4848-edcd-799d96f998c1",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"id": "1b043f12-bfab-44d2-a0fd-58ec20621f4d",
+							"name": "UserInfo",
+							"objectType": "reference"
+						}
+					]
+				},
+				{
+					"id": "e0f7b434-bfe2-4130-a86f-96341e91d135",
+					"status": "400",
+					"description": "OK",
+					"headers": [],
+					"content": []
+				}
+			],
+			"content": [
+				{
+					"objectType": "object",
+					"items": [
+						{
+							"name": "email",
+							"objectType": "string",
+							"required": true,
+							"children": []
+						}
+					]
+				}
+			],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "6bdec92e-55b9-4134-b3f5-77b93d3b34b7"
+		},
+		{
+			"id": "3d8aa7c1-17b4-4a85-f287-786cb9f7bf20",
+			"method": "POST",
+			"path": "/DeleteUser",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"id": "9fdc2ef0-14fe-4c43-a714-dc7c91d1801a",
+					"status": "204",
+					"description": "OK",
+					"headers": [],
+					"content": []
+				},
+				{
+					"id": "6316b044-69ca-48da-905c-9ed7dc71940f",
+					"status": "400",
+					"description": "OK",
+					"headers": [],
+					"content": []
+				}
+			],
+			"content": [
+				{
+					"objectType": "object",
+					"items": [
+						{
+							"name": "id",
+							"objectType": "string",
+							"required": true,
+							"children": []
+						}
+					]
+				}
+			],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "1e6c2781-d404-407f-ac0b-5040a5728eb2"
+		},
+		{
+			"id": "881b56ba-797e-46f2-a4e4-4b6c48e93d5e",
+			"method": "POST",
+			"path": "/AddArtist",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [],
+			"content": [
+				{
+					"objectType": "object",
+					"items": [
+						{
+							"name": "id",
+							"objectType": "string",
+							"required": true,
+							"children": []
+						},
+						{
+							"name": "name",
+							"objectType": "string",
+							"required": true,
+							"children": []
+						},
+						{
+							"name": "uri",
+							"objectType": "string",
+							"required": true,
+							"children": []
+						},
+						{
+							"name": "popular",
+							"objectType": "string",
+							"required": true,
+							"children": []
+						}
+					]
+				}
+			],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "db4a698a-258f-410e-b57c-8240fb9026bc"
+		},
+		{
+			"id": "10c53174-5f51-4ebf-a08f-eb3befd577e0",
+			"method": "POST",
+			"path": "/GetArtistById",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"id": "9423c8ae-65b6-461a-9109-62d467601c51",
+					"status": "200",
+					"description": "",
+					"headers": [],
+					"content": [
+						{
+							"id": "629846eb-1095-4561-ff01-850e1118ef99",
+							"name": "ArtistsUser",
+							"objectType": "reference"
+						}
+					]
+				},
+				{
+					"id": "b21841d9-2d69-44b2-fc19-78b6b73edd4b",
+					"status": "400",
+					"description": "",
+					"headers": [],
+					"content": []
+				}
+			],
+			"content": [
+				{
+					"objectType": "object",
+					"items": [
+						{
+							"name": "id",
+							"objectType": "string",
+							"required": true,
+							"children": []
+						}
+					]
+				}
+			],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "1165bb5f-f2a4-496a-920a-a727cfd4eb9a"
+		},
+		{
+			"id": "fdfcbbcc-3a16-42f1-af57-ae89c72a4170",
+			"method": "POST",
+			"path": "/RemoveArtist",
+			"description": "",
+			"parameters": [],
+			"headers": [],
+			"responses": [
+				{
+					"id": "9b184cfc-9f7c-4093-dcb7-f49c42bfb33f",
+					"status": "200",
+					"description": "",
+					"headers": [],
+					"content": []
+				},
+				{
+					"id": "f4fbd889-023d-4654-d3cc-0ae4c343c995",
+					"status": "400",
+					"description": "",
+					"headers": [],
+					"content": []
+				}
+			],
+			"content": [
+				{
+					"objectType": "object",
+					"items": [
+						{
+							"name": "userId",
+							"objectType": "string",
+							"required": true,
+							"children": []
+						},
+						{
+							"name": "artistId",
+							"objectType": "string",
+							"required": true,
+							"children": []
+						}
+					]
+				}
+			],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "32e39981-5bc7-477d-9ddf-de5e88e78e52"
+		}
+	],
+	"definitions": [
+		{
+			"id": "e0f7d870-add7-4350-e200-d59b059b6461",
+			"name": "UserInfo",
+			"description": "user info",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "1b9101ba-4144-4aca-8bcb-c6e67036b825",
+					"name": "email",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "ajosegoncalves01@gmail.com",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "fd7baf19-a10f-4a23-8a2f-0ca98db25a25",
+					"name": "display_name",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "antonio",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "5871184f-8c06-42c6-cfca-7517b621d16a",
+					"name": "password",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "$2a$10$6aDV7HanYruA3WotaBnleOPCCbTOJitbxN9.BSw7w1BTb4KKBSt3S",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "8260e3c0-2671-479e-e656-35ff3d1cc0e6",
+					"name": "id",
+					"objectType": "string",
+					"description": "",
+					"required": false,
+					"value": "",
+					"minLength": "",
+					"maxLength": "",
+					"default": "",
+					"example": "",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				}
+			],
+			"type": "object"
+		},
+		{
+			"id": "2cae8314-a929-4800-b0e2-8d721886604f",
+			"name": "ArtistsUser",
+			"description": "",
+			"isInclude": false,
+			"properties": [
+				{
+					"id": "9936f4a7-a765-460e-839a-e2043871086e",
+					"name": "ua_id",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "f43c6481-1541-48e0-8ce7-0a8c84d7b975",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "c5d5e39a-d947-45d3-95c5-1f9746f7c815",
+					"name": "ua_createdAt",
+					"objectType": "number",
+					"required": false,
+					"parent": "",
+					"example": 1761672009367,
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "02df8214-6f53-4a03-d16c-69c0e79302bd",
+					"name": "ua_updatedAt",
+					"objectType": "number",
+					"required": false,
+					"parent": "",
+					"example": 1761672009367,
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "1eb5213a-3c8f-4e30-aec9-1abaf9d6649c",
+					"name": "ua_createdBy",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "admin",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "4f2325b1-2a62-45e4-8025-cf96c9c59030",
+					"name": "ua_updatedBy",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "admin",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "d8604c39-b300-4fe8-dbd7-5f25b9955d7b",
+					"name": "ua_user_id",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "7a92dd06-34df-4523-bea1-914344f2a6d7",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "9d425c52-648e-4184-8f6c-b92d4788583e",
+					"name": "ua_artist_id",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "a3408b8f-cd70-448b-9a81-490d8653e339",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "0d58cf32-e708-429d-a45f-9ae0b5fde12b",
+					"name": "a_id",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "a3408b8f-cd70-448b-9a81-490d8653e339",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "89b504eb-02a3-4a60-cd73-dad5d0e63365",
+					"name": "a_createdAt",
+					"objectType": "number",
+					"required": false,
+					"parent": "",
+					"example": 1761672009363,
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "32acb710-e226-4313-cebb-0ebebba700f9",
+					"name": "a_updatedAt",
+					"objectType": "number",
+					"required": false,
+					"parent": "",
+					"example": 1761672009363,
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "14ff6b67-a6d7-4d7f-ed5a-724bb967e843",
+					"name": "a_createdBy",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "admin",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "c9331eaa-53fa-4faf-fb7e-706f6fc4b663",
+					"name": "a_updatedBy",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "admin",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "9056f7ee-b28d-4715-8194-f4cceafe7b1e",
+					"name": "a_name",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "Bispo",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "8479ac62-a1ca-4880-9b76-4950996c3254",
+					"name": "a_popular",
+					"objectType": "number",
+					"required": false,
+					"parent": "",
+					"example": 54,
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				},
+				{
+					"id": "9f278b2c-23be-49aa-c803-09d22ce13773",
+					"name": "a_uri",
+					"objectType": "string",
+					"required": false,
+					"parent": "",
+					"example": "Link to artist: https://open.spotify.com/artist/3LZCMaZWwvhYyQeEfWgVdY",
+					"isParent": false,
+					"enableValueHelp": false,
+					"canAddSubNode": false,
+					"enabled": true,
+					"hideNameField": false,
+					"children": []
+				}
+			],
+			"type": "array"
+		}
+	],
+	"documentation": [],
+	"name": "users_spotify_demo",
+	"endpoint": "/public/serverscript/users_spotify_demo",
+	"ver": "25.10.28.1943",
+	"version": null,
+	"description": null,
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "script",
+	"about": null,
+	"enableProxy": false,
+	"forwardProxy": null,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"internalAPI": false,
+	"isPublic": true,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "595c0d8e-ada3-41fc-a4a3-5e5628caf58b",
+	"apiGroup": null,
+	"apiFormat": 1,
+	"roles": []
+}

@@ -1,0 +1,26 @@
+{
+	"id": "6bdec92e-55b9-4134-b3f5-77b93d3b34b7",
+	"createdAt": "2025-10-25T01:35:09.000Z",
+	"createdBy": "admin",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "7c7a9899-beb6-43bf-bd39-860d70b200cb",
+			"name": "users",
+			"contextname": "users"
+		}
+	],
+	"apis": [],
+	"name": "GetUserInfo",
+	"ver": "25.10.25.1550",
+	"description": "Get user info by email",
+	"folder": "",
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "b5eacc3c-a01b-4386-9232-5ae5db4c46d8",
+	"package": "595c0d8e-ada3-41fc-a4a3-5e5628caf58b"
+}

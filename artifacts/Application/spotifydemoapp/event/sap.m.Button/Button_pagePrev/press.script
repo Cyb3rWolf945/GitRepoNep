@@ -1,0 +1,4 @@
+// Press Back
+const q = searchBarInput.getValue();
+PaginationService.instance.previousPage();
+PaginationService.instance.SearchApiRequest(q);

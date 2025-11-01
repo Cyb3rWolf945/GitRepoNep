@@ -1,0 +1,81 @@
+{
+	"id": "e3b77e2f-9d4e-4519-b182-8c4e4b55ce2b",
+	"createdAt": "2025-10-23T00:27:08.000Z",
+	"createdBy": "admin",
+	"fields": [
+		{
+			"id": "f20df01c-280d-48e9-8b13-5cd1904ce066",
+			"fieldName": "USER_ID",
+			"fieldType": "uuid",
+			"isUnique": false
+		},
+		{
+			"id": "334d5c16-b281-4778-e8c1-300eb6f4a6b3",
+			"fieldName": "NAME",
+			"fieldType": "smalltext",
+			"isUnique": false
+		},
+		{
+			"id": "63d5ab0e-6fa6-4422-e06f-454470e1417d",
+			"fieldName": "DESCRIPTION",
+			"fieldType": "mediumtext",
+			"isUnique": false,
+			"isNullable": true
+		}
+	],
+	"indices": [],
+	"foreignKeys": [
+		{
+			"id": "e427fa9e-01c5-42ea-ea41-eaec675c1947",
+			"name": "FK_3c55bd5a60f0f4fe070ff58acce",
+			"referencedTable": "users",
+			"referencedTableId": "7c7a9899-beb6-43bf-bd39-860d70b200cb",
+			"referencedTableColumns": [
+				{
+					"id": "7540e198-3ff5-4474-e242-eeb30e966336",
+					"fieldName": "USERNAME",
+					"fieldType": "smalltext",
+					"isUnique": false
+				},
+				{
+					"id": "106eb8e1-9086-4eba-eaac-5e2495a6ca62",
+					"fieldName": "EMAIL",
+					"fieldType": "smalltext",
+					"isUnique": false
+				},
+				{
+					"id": "a518c3f4-d01d-49e9-ca78-e34101de1030",
+					"fieldName": "PASSWORD_HASH",
+					"fieldType": "smalltext",
+					"isUnique": false
+				},
+				{
+					"id": "e08b1e2c-5011-4df2-a55b-fafafd259d5a",
+					"fieldName": "DISPLAY_NAME",
+					"fieldType": "smalltext",
+					"isUnique": false
+				}
+			],
+			"columns": [
+				{
+					"referencedColumnId": "id",
+					"id": "f20df01c-280d-48e9-8b13-5cd1904ce066",
+					"fieldName": "USER_ID",
+					"fieldType": "uuid",
+					"isUnique": false,
+					"referencedColumnName": "id"
+				}
+			],
+			"onDelete": "CASCADE"
+		}
+	],
+	"name": "user_playlists",
+	"description": "Junction table between users and playlists",
+	"ver": "25.10.23.2048",
+	"enableAudit": false,
+	"includeDataInPackage": true,
+	"package": "595c0d8e-ada3-41fc-a4a3-5e5628caf58b",
+	"generationStrategy": null,
+	"rolesRead": [],
+	"rolesWrite": []
+}

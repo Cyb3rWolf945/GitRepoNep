@@ -1,0 +1,26 @@
+{
+	"id": "32e39981-5bc7-477d-9ddf-de5e88e78e52",
+	"createdAt": "2025-10-28T19:07:31.000Z",
+	"createdBy": "admin",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "fd04dc61-265e-47ee-8398-56008e7a3149",
+			"name": "users_artists",
+			"contextname": "users_artists"
+		}
+	],
+	"apis": [],
+	"name": "remove_artist",
+	"ver": "25.10.28.1945",
+	"description": "remove artist from fav",
+	"folder": "",
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "b5eacc3c-a01b-4386-9232-5ae5db4c46d8",
+	"package": "595c0d8e-ada3-41fc-a4a3-5e5628caf58b"
+}

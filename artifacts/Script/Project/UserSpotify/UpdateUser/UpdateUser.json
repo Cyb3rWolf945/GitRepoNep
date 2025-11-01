@@ -1,0 +1,26 @@
+{
+	"id": "70b0cdb5-c9fa-4acb-919f-108ab7e39b08",
+	"createdAt": "2025-10-25T01:31:04.000Z",
+	"createdBy": "admin",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "7c7a9899-beb6-43bf-bd39-860d70b200cb",
+			"name": "users",
+			"contextname": "users"
+		}
+	],
+	"apis": [],
+	"name": "UpdateUser",
+	"ver": "25.10.25.0231",
+	"description": "update user for spotify demo",
+	"folder": "",
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "04e99af1-4fdb-4a44-ad87-736c5e14fdca",
+	"package": "595c0d8e-ada3-41fc-a4a3-5e5628caf58b"
+}

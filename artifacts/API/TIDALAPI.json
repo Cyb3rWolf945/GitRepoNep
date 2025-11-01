@@ -1,0 +1,87 @@
+{
+	"id": "81e2c678-0e80-4b8a-be6b-d4b0c4e79974",
+	"createdAt": "2025-10-26T16:25:14.000Z",
+	"createdBy": "admin",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "1db38b73-82e6-4b6a-f75a-a2279f4ef7ac",
+			"method": "GET",
+			"path": "/artists",
+			"description": "",
+			"parameters": [
+				{
+					"name": "countryCode",
+					"description": "",
+					"required": true,
+					"inPath": false,
+					"value": "",
+					"default": "US",
+					"example": ""
+				}
+			],
+			"headers": [
+				{
+					"name": "Authorization",
+					"description": "",
+					"required": true,
+					"value": "",
+					"default": "Bearer eyJraWQiOiJ2OU1GbFhqWSIsImFsZyI6IkVTMjU2In0.eyJ0eXBlIjoibzJfYWNjZXNzIiwic2NvcGUiOiIiLCJnVmVyIjowLCJzVmVyIjowLCJjaWQiOjIwNjQxLCJleHAiOjE3NjE1NDI3MjUsImlzcyI6Imh0dHBzOi8vYXV0aC50aWRhbC5jb20vdjEifQ.zNcD3uVQqJhcr5-liUyiGugVcw19Pkv4Wssx1dFWjn3H1outBhR8_FwxmfVEPxZRUia6oK5gj42z-rRUpn6zsQ",
+					"example": ""
+				}
+			],
+			"responses": [
+				{
+					"id": "6cd94171-81cd-4185-817f-725f80dbf64c",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"id": "a615f83a-a9e6-4e7a-f8a7-1751b044d4bb",
+							"name": "SearchDefinition",
+							"objectType": "reference"
+						}
+					]
+				},
+				{
+					"id": "2f2f0385-6efa-45c4-a256-c8a448c05c6f",
+					"status": "400",
+					"description": "",
+					"headers": [],
+					"content": []
+				}
+			],
+			"content": [],
+			"auth": [],
+			"endpoints": []
+		}
+	],
+	"definitions": [],
+	"documentation": [],
+	"name": "TIDALAPI",
+	"endpoint": "https://openapi.tidal.com/v2",
+	"ver": "25.10.26.1729",
+	"version": null,
+	"description": null,
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "",
+	"about": null,
+	"enableProxy": false,
+	"forwardProxy": null,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": true,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": true,
+	"useOwnProcess": false,
+	"package": "595c0d8e-ada3-41fc-a4a3-5e5628caf58b",
+	"apiGroup": null,
+	"apiFormat": 1,
+	"roles": []
+}

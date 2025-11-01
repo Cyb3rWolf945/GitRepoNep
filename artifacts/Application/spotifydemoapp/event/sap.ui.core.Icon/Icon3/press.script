@@ -1,0 +1,11 @@
+// Get ids for artist and user
+const id_user = getId();
+const id_artist = oEvent.oSource.getParent().getBindingContext().getObject().a_id
+
+var options = { data: {userId: id_user, artistId: id_artist} };
+
+apiRemoveArtist(options).then(() => {
+    var options = { data: {id: id_user} };
+
+    apiGetArtists(options);
+});

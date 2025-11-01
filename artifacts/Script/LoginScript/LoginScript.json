@@ -1,0 +1,33 @@
+{
+	"id": "07cd030c-7cfb-4c59-bbe3-599b53e37361",
+	"createdAt": "2025-10-23T20:12:22.000Z",
+	"createdBy": "admin",
+	"globalScripts": [],
+	"externalModules": [
+		{
+			"id": "internal_bcryptjs",
+			"name": "bcryptjs",
+			"contextname": "bcryptjs",
+			"path": "bcryptjs"
+		}
+	],
+	"entitySets": [
+		{
+			"id": "7c7a9899-beb6-43bf-bd39-860d70b200cb",
+			"name": "users",
+			"contextname": "users"
+		}
+	],
+	"apis": [],
+	"name": "LoginScript",
+	"ver": "25.10.25.1714",
+	"description": "Login auth",
+	"folder": "",
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"lastRunSuccessful": true,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "b5eacc3c-a01b-4386-9232-5ae5db4c46d8",
+	"package": "595c0d8e-ada3-41fc-a4a3-5e5628caf58b"
+}
